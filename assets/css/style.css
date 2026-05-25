@@ -874,6 +874,9 @@ p  { margin: 0 0 1rem; color: var(--text-soft); }
   width: 100%;
   height: 100%;
   object-fit: cover;
+  /* Shift the visible crop down so the athlete's face sits in the
+     vertical middle of the band, not below it. */
+  object-position: center 72%;
   z-index: 0;
 }
 .atmosphere__overlay {
