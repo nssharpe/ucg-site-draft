@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page not found — UCG</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Self-contained styles so this page works regardless of deploy path. */
+    *,*::before,*::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: #0A1330;
+      color: #F4F1EA;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+      line-height: 1.5;
+    }
+    .nf {
+      max-width: 520px;
+      text-align: center;
+    }
+    .nf__big {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: clamp(6rem, 18vw, 12rem);
+      line-height: 1;
+      color: #8DA8E8;
+      margin: 0 0 1rem;
+      font-weight: 700;
+      letter-spacing: -0.05em;
+    }
+    .nf h1 {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 700;
+      margin: 0 0 1rem;
+      letter-spacing: -0.02em;
+    }
+    .nf p {
+      color: rgba(244,241,234,0.78);
+      font-size: 1.1rem;
+      margin: 0 0 2rem;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.85rem 1.4rem;
+      border-radius: 999px;
+      font-family: "Space Grotesk", sans-serif;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: transform .15s ease, background .2s ease;
+      margin: 0 0.3rem 0.5rem;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn--primary { background: #A5E5DD; color: #0A1330; }
+    .btn--ghost { background: transparent; color: #F4F1EA; border: 1.5px solid rgba(244,241,234,0.4); }
+    .nf__mark {
+      width: 64px; height: 64px; margin: 0 auto 1rem;
+      border-radius: 50%; background: #8DA8E8;
+      display: grid; place-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="nf">
+    <div class="nf__mark">
+      <svg width="40" height="40" viewBox="0 0 64 64"><g fill="#0A1330"><circle cx="32" cy="24" r="3.4"/><path d="M32 28 L24 44 L29 44 L32 35 L35 44 L40 44 Z"/><path d="M30 19 L20 9 L17 12 L27 22 Z"/><path d="M34 19 L44 9 L47 12 L37 22 Z"/><path d="M24 26 L10 26 L10 30 L24 30 Z"/><path d="M40 26 L54 26 L54 30 L40 30 Z"/><path d="M26 33 L14 41 L17 44 L29 36 Z"/><path d="M38 33 L50 41 L47 44 L35 36 Z"/></g></svg>
+    </div>
+    <p class="nf__big">404</p>
+    <h1>This page doesn't exist.</h1>
+    <p>It may have moved during the NAIGC → UCG rebrand, or the link could be wrong.</p>
+    <a href="./" class="btn btn--primary">Go home</a>
+    <a href="javascript:history.back()" class="btn btn--ghost">Go back</a>
+  </div>
+</body>
+</html>
