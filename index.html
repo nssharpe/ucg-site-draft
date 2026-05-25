@@ -100,85 +100,97 @@
   </div>
 </header>
 
-<!-- ========== Hero ========== -->
-<section class="hero">
-  <div class="container hero__inner">
-    <div class="hero__copy">
-      <span class="hero__tag">
-        <span style="width:6px;height:6px;border-radius:50%;background:var(--navy);display:inline-block;"></span>
-        Welcome to UCG — formerly NAIGC
-      </span>
-      <h1 class="hero__title">Collegiate &amp; adult gymnastics, <em>united</em>.</h1>
-      <p class="hero__sub">We provide structure for competition at every level, a national community of clubs and athletes, and the support you need to keep flipping — long after high school.</p>
-      <div class="hero__ctas">
-        <a href="about/clubs.html" class="btn btn--primary btn--lg">Find Your Club</a>
-        <a href="join/membership.html" class="btn btn--mint btn--lg">Join UCG</a>
-        <a href="compete/index.html" class="btn btn--ghost btn--lg">Upcoming Events</a>
-      </div>
-      <div class="hero__meta">
-        <div><strong>2,600+</strong><span>Members</span></div>
-        <div><strong>150+</strong><span>Clubs</span></div>
-        <div><strong>36</strong><span>Years strong</span></div>
-        <div><strong>5</strong><span>Disciplines</span></div>
-      </div>
-    </div>
+<!-- ========== Hero (pathway-led) ========== -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero__layout">
 
-    <div class="hero__visual" aria-hidden="true">
-      <div class="hero__visual__stage">
-        <div class="hero__visual__disc">
-          <img class="hero__visual__crest" src="assets/img/UCG Crest.svg" alt="" />
+      <!-- LEFT: headline + pathway selector -->
+      <div>
+        <span class="hero__tag">
+          <span class="dot"></span>
+          We're now UCG — formerly NAIGC
+        </span>
+        <h1 class="hero__title">Collegiate &amp; adult gymnastics, <em>united</em>.</h1>
+        <p class="hero__sub">UCG is the national home for collegiate and adult gymnastics in the United States — a volunteer-run nonprofit that's been running competitions, building community, and pushing the sport forward since 1989.</p>
+
+        <div class="pathblock">
+          <div class="pathblock__label">Choose your path · I'm a…</div>
+          <div class="pathblock__grid" role="tablist" id="pathway-tabs">
+            <button type="button" role="tab" data-pathway="prospective" class="pathway-card is-active" aria-selected="true">
+              <div class="pathway-card__top">
+                <span class="pathway-card__label">Prospective gymnast</span>
+                <span class="pathway-card__arrow">→</span>
+              </div>
+              <span class="pathway-card__sub">I want to start competing — with a club or on my own.</span>
+            </button>
+            <button type="button" role="tab" data-pathway="returning" class="pathway-card" aria-selected="false">
+              <div class="pathway-card__top">
+                <span class="pathway-card__label">Returning adult</span>
+                <span class="pathway-card__arrow">→</span>
+              </div>
+              <span class="pathway-card__sub">I want to compete again as an adult.</span>
+            </button>
+            <button type="button" role="tab" data-pathway="officer" class="pathway-card" aria-selected="false">
+              <div class="pathway-card__top">
+                <span class="pathway-card__label">Club officer</span>
+                <span class="pathway-card__arrow">→</span>
+              </div>
+              <span class="pathway-card__sub">I'm running a club and need to manage things.</span>
+            </button>
+            <button type="button" role="tab" data-pathway="coach" class="pathway-card" aria-selected="false">
+              <div class="pathway-card__top">
+                <span class="pathway-card__label">Coach or judge</span>
+                <span class="pathway-card__arrow">→</span>
+              </div>
+              <span class="pathway-card__sub">I need rule books, calculators, or sanctioning.</span>
+            </button>
+          </div>
         </div>
       </div>
-      <div class="hero__card hero__card--top">
-        <span class="hero__card__icon" style="background:var(--mint);">N27</span>
-        <span class="hero__card__text">
-          <span class="hero__card__label">Nationals 2027</span>
-          <span class="hero__card__value">Portland · Mar 31 – Apr 3</span>
-        </span>
+
+      <!-- RIGHT: context panel (swaps with selected pathway) -->
+      <div class="hero__panel" id="pathway-panel">
+        <div class="hero__panel__photo" id="pathway-photo"></div>
+        <div class="hero__panel__inner">
+          <span class="hero__panel__eyebrow" id="pathway-eyebrow">Welcome</span>
+          <h2 class="hero__panel__title" id="pathway-title">Join a club — or just jump in.</h2>
+          <p class="hero__panel__lead" id="pathway-lead">Two ways in: train with one of 150+ UCG clubs around the country, or register as an Independent Gymnast and compete unattached. Same membership, same events, same rulebook — your choice.</p>
+          <div class="hero__panel__steps" id="pathway-steps"></div>
+          <a class="hero__panel__cta" id="pathway-cta" href="join/membership.html">Start your membership →</a>
+        </div>
       </div>
-      <div class="hero__card hero__card--right">
-        <span class="hero__card__icon" style="background:var(--cream-deep);">AGM</span>
-        <span class="hero__card__text">
-          <span class="hero__card__label">Annual Meeting</span>
-          <span class="hero__card__value">Sept 2026 · Virtual</span>
-        </span>
-      </div>
-      <div class="hero__card hero__card--bottom">
-        <span class="hero__card__icon" style="background:var(--navy);color:var(--mint);">FF</span>
-        <span class="hero__card__text">
-          <span class="hero__card__label">FlipFest 2026</span>
-          <span class="hero__card__value">Aug 7–9 · Crossville, TN</span>
-        </span>
-      </div>
+
+    </div>
+
+    <div class="hero__meta">
+      <div><strong>2,600+</strong><span>Members</span></div>
+      <div><strong>150+</strong><span>Clubs</span></div>
+      <div><strong>5</strong><span>Disciplines</span></div>
+      <div><strong>37</strong><span>Years strong</span></div>
     </div>
   </div>
 </section>
 
-<!-- ========== Audience Pathways ========== -->
-<section class="pathways">
-  <div class="container pathways__inner">
-    <div class="pathways__head">
-      <span class="eyebrow" style="color:var(--mint)">Choose your path</span>
-      <h2>I'm a…</h2>
-      <p>Jump straight to what's most useful for you.</p>
-    </div>
-    <div class="pathways__grid">
-      <a class="pathway" href="about/clubs.html">
-        <strong>Prospective Gymnast</strong>
-        <span>Find a club, learn the levels, see what membership unlocks.</span>
-      </a>
-      <a class="pathway" href="join/start-club.html">
-        <strong>Club Officer</strong>
-        <span>Register your club, host a meet, manage members.</span>
-      </a>
-      <a class="pathway" href="compete/rules/index.html">
-        <strong>Coach or Judge</strong>
-        <span>Rule books, code of points, calculators, sanctioning.</span>
-      </a>
-      <a class="pathway" href="about/index.html#alumni">
-        <strong>Alumni</strong>
-        <span>Stay connected, mentor, return to the floor at Masters.</span>
-      </a>
+<!-- ========== Quick-Find search ========== -->
+<section class="quickfind" id="quickfind">
+  <div class="container">
+    <div class="quickfind__inner">
+      <div class="quickfind__search" id="qf-search-wrap">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input type="search" id="qf-input" placeholder="Search rules, events, membership, clubs…" aria-label="Search the UCG site" autocomplete="off" />
+        <button type="button" class="quickfind__search__btn" id="qf-go">Search</button>
+        <div class="quickfind__popover" id="qf-popover" role="listbox"></div>
+      </div>
+      <div class="quickfind__chips" aria-label="Popular searches">
+        <span class="quickfind__chips__label">Popular →</span>
+        <button type="button" class="qf-chip" data-qf-chip="rules">Rules &amp; Code of Points</button>
+        <button type="button" class="qf-chip" data-qf-chip="nationals">Nationals 2027</button>
+        <button type="button" class="qf-chip" data-qf-chip="membership">Membership</button>
+        <button type="button" class="qf-chip" data-qf-chip="independent">Independent Gymnast</button>
+        <button type="button" class="qf-chip" data-qf-chip="find a club">Find a club</button>
+        <button type="button" class="qf-chip" data-qf-chip="host">Host a meet</button>
+      </div>
     </div>
   </div>
 </section>
@@ -586,5 +598,6 @@
 
 <script src="assets/js/gate.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/home.js"></script>
 </body>
 </html>
